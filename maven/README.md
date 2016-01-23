@@ -5,7 +5,7 @@
 # Create Project
 
 ```
-mvn archetype:create \
+mvn archetype:generate \
 	-DarchetypeArtifactId=maven-archetype-webapp \
 	-DgroupId=[e.g. com.chen] -DartifactId=[e.g spring] 
 ```

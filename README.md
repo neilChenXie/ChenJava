@@ -16,10 +16,11 @@ There are templates under [TEMPLATE]() folder
 Must contained inside a project. 
 
 * [pom.xml]()
-	* maven project information
+	* **maven** project information
 	* jar package dependencies
 * [spring.xml]()
 	* **core** config file for **spring**.
+	* auto **scan** **@Service** and execute **@Autowired**
 	* can import **spring-mybatis.xml** to integrate **mybatis**.
 * [spring-mybatis.xml]()
 	specify **elements** for **mybatis**
@@ -27,6 +28,17 @@ Must contained inside a project.
 	* mapper.xml files
 	* DAO package
 * [spring-mvc.xml]()
+	* **scan** for **@Controller** inside package
+	* specify **views** folder ,**.jsp** suffix, and **statci** files.
+* [web.xml]()
+	* load **xml** files which are specified by `<context-param>` section
+	* filter
+		* encoding filter
+	* filter-mapping(filter router)
+	* servlet
+		* [spring-mvc].xml file
+	* servlet-mapping(url router)
+		* controller suffix
 
 ## Properties
 
@@ -41,6 +53,7 @@ Being imported by **xml** files to set **easily changed variables**
 # Program Procedure
 
 * [JUnit Test](#junit_test)
+* [Spring MVC](#spring_mvc)
 * [Spring Annotation](#spring_annotation)
 
 <a id="junit_test"></a>
@@ -77,6 +90,13 @@ Being imported by **xml** files to set **easily changed variables**
 3. getBean("[name in @Service()]") which is set inside **spring.xml** to **auto scan**
 
 4. test **method** in interface implementation
+
+<a id="spring_mvc"></a>
+
+## Spring MVC
+
+1. **web.xml**
+
 
 <a id="spring_junit"></a>
 

@@ -1,12 +1,42 @@
-# Start
+# Abstract
 This project will store **experience, template and other important things** to make my java development work more easilier.
-And the procedures are based on **Spring Framework**
+And **Framework File** and **Procedures** are based on **Spring Framework**
 
 # Contain
 * [maven](https://github.com/neilChenXie/java_dev/tree/master/maven)
 * [eclipse](https://github.com/neilChenXie/java_dev/tree/master/eclipse)
-* [spring/spring-mvc]()
 * [mybatis](https://github.com/neilChenXie/java_dev/tree/master/mybatis)
+
+# Framework File
+
+There are templates under [TEMPLATE]() folder
+
+## Core
+
+Must contained inside a project. 
+
+* [pom.xml]()
+	* maven project information
+	* jar package dependencies
+* [spring.xml]()
+	* **core** config file for **spring**.
+	* can import **spring-mybatis.xml** to integrate **mybatis**.
+* [spring-mybatis.xml]()
+	specify **elements** for **mybatis**
+	* data source
+	* mapper.xml files
+	* DAO package
+* [spring-mvc.xml]()
+
+## Properties
+
+Being imported by **xml** files to set **easily changed variables**
+
+* [system.properties]()
+
+* [jdbc.properties]()
+
+* [codemsg.properties]()
 
 # Program Procedure
 

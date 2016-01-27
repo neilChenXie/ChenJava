@@ -21,7 +21,7 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 	`how test and program run step-by-step`
 
-* [Deployment]('https://github.com/neilChenXie/java_dev/tree/master/eclipse')
+* [Deployment](https://github.com/neilChenXie/java_dev/tree/master/eclipse#deploy)
 
 	`when use eclipse, eclim or other eclipse based IDE, THIS STEP IS NECESSARY`
 

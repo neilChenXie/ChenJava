@@ -2,6 +2,8 @@
 
 * [generator](https://github.com/neilChenXie/java_dev/tree/master/mybatis/generator)
 
+	`used for generating dao, model and mapping`
+
 # Related Spring XML
 
 * [spring-mybatis.xml](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/resources/configs/spring-mybatis.xml)

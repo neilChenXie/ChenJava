@@ -38,6 +38,10 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 * classpath\*:
 
+## Bean
+
+spring is a object _container_, Bean is one object will be created in the container
+
 <a id="framework_file"></a>
 
 # Framework File

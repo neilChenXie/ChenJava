@@ -23,7 +23,10 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 * [Deployment](https://github.com/neilChenXie/java_dev/tree/master/eclipse#deploy)
 
-	`when use eclipse, eclim or other eclipse based IDE, THIS STEP IS NECESSARY`
+	```
+	when use eclipse, eclim or other eclipse based IDE, THIS STEP IS NECESSARY
+	Otherwise, cannot find any maven jar files
+	```
 
 <a id="basic"></a>
 

@@ -10,11 +10,16 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 ## Contents
 
 * [Basic](#basic) 
-	* `some important tips`
+
+	`some important tips`
+
 * [Framework Files](#framework_file) 
-	* `how xml and other files work together`
+
+	`how xml and other files work together`
+
 * [Program Procedure]('#program_procedure') 
-	* `how test and program run step-by-step`
+
+	`how test and program run step-by-step`
 
 <a id="basic"></a>
 
@@ -43,11 +48,11 @@ Must contained inside a project.
 
 * [spring.xml]()
 	**core** config file for **spring**.
-	* `<context:property-placeholder location="classpath:mybatis.properties" ignore-unresolvable="true"/>`
+	* `<context:property-placeholder />`
 		load properties variables
 		* **exception**
 			* in **spring-mybatis.xml**: `<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">` inside cannot use properties
-	* `<mvc:resources mapping="/images/**" location="/images/" />`
+	* `<context:component-scan />`
 		auto **scan** **@Service** and execute **@Autowired**
 	* `<import>`
 		can import **spring-mybatis.xml** to integrate **mybatis**.
@@ -60,11 +65,11 @@ Must contained inside a project.
 	* `<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">` inside cannot use properties
 		where is **DAO** package
 * [spring-mvc.xml]()
-	* `<context:component-scan base-package="com.controller" />`
+	* `<context:component-scan />`
 		**scan** for **@Controller**
-	* `<bean	class="org.springframework.web.servlet.view.InternalResourceViewResolver">` 
+	* `<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">` 
 		specify **views** folder ,**.jsp** suffix.
-	* `<mvc:resources mapping="/images/**" location="/images/" />` 
+	* `<mvc:resources />` 
 		specify **static** files
          
 * [web.xml]()
@@ -72,6 +77,7 @@ Must contained inside a project.
 	* `<context-param>`
 		* load **spring.xml** and **spring-mybatis.xml**
 		* **critical**
+
 			```xml
 			<!--spring.xml-->
 			<import resource="classpath:configs/spring-mybatis.xml" />
@@ -80,6 +86,7 @@ Must contained inside a project.
 			<!--DON'T INCLUD spring-mybatis.xml TWICE-->
 			<!--Other files are the same-->
 			```
+
 	* `<filter>`
 		* encoding filter
 	* `<filter-mapping>`(filter router)

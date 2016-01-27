@@ -10,11 +10,11 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 ## Contents
 
 * [Basic](#basic) 
-	`some important tips`
+	* `some important tips`
 * [Framework Files](#framework_file) 
-	`how xml and other files work together`
+	* `how xml and other files work together`
 * [Program Procedure]('#program_procedure') 
-	`how test and program run step-by-step`
+	* `how test and program run step-by-step`
 
 <a id="basic"></a>
 

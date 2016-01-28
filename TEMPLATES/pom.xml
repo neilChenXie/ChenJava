@@ -1,140 +1,156 @@
 <project 	xmlns="http://maven.apache.org/POM/4.0.0" 
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<!--Don't need to change part-->
+
 	<!--Maven Project Based-->
-	<groupId>[com.chen]</groupId>
-
-	<artifactId>[mvc]</artifactId>
-
+	<groupId>com.chen</groupId>
+	<artifactId>realmvc</artifactId>
 	<build>
-		<finalName>[mvc]</finalName>
+		<finalName>realmvc</finalName>
+
+		<!--eclipse needed-->
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.8</source> <!-- yours Java version -->
+					<target>1.8</target> <!-- yours Java version -->
+				</configuration>
+			</plugin>
+
+		</plugins>
+
 	</build>
 	<!--End with Maven Setting-->
 
 	<packaging>war</packaging>
-
-	<version>0.0.1-SNAPSHOT</version>
-
+  	<version>1.0.0-SNAPSHOT</version>
 	<name>study Maven Webapp</name>
-
 	<url>http://maven.apache.org</url>
-	<!---->
 
-	<!--for same version of spring related jar -->
-	<properties>
-		<spring.version>4.2.4.RELEASE</spring.version>
-	</properties>
+	<!--<properties>-->
+          <!--<spring.version>4.2.4.RELEASE</spring.version>-->
+	<!--</properties>-->
 
+	<!--jar package dependencies-->
 	<dependencies>
 
-		<!--Test related-->
+		<!--test-->
+    	<dependency>
+    		<groupId>junit</groupId>
+    		<artifactId>junit</artifactId>
+    		<version>4.12</version>
+      		<scope>test</scope><!--action scope:作用域。not work when generator war package-->
+    	</dependency>
+    	
+		<!--spring/springmvc-->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope><!--action scope:作用域。not work when generator war package-->
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-core</artifactId>
+    		<version>4.2.4.RELEASE</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-web</artifactId>
+    		<version>4.2.4.RELEASE</version>
+		</dependency>
+    	<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-webmvc</artifactId>
+    		<version>4.2.4.RELEASE</version>
+    	</dependency>
+    	<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-tx</artifactId>
+    		<version>4.2.4.RELEASE</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-jdbc</artifactId>
+    		<version>4.2.4.RELEASE</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-test</artifactId>
+    		<version>4.2.4.RELEASE</version>
 		</dependency>
 
+		<!--mybatis-->
+    	<dependency>  
+   			<groupId>org.mybatis</groupId>  
+   			<artifactId>mybatis</artifactId>  
+   			<version>3.3.0</version>  
+ 		</dependency> 
+ 		<dependency>
+        	<groupId>org.mybatis</groupId>
+        	<artifactId>mybatis-spring</artifactId>
+        	<version>1.2.3</version>
+     	</dependency>
+     	<dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+      	</dependency>
+      
+      	<!--mysql driver jar package-->
+      	<dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+      	</dependency>
+      
+      	<!--data source-->
+      	<dependency>
+      		<groupId>com.alibaba</groupId>
+      		<artifactId>druid</artifactId>
+      		<version>1.0.16</version>
+      	</dependency>
+
+		<!--HTTP Section:Http, File-->
+		<!--HTTP-->
+    	<dependency>
+    		<groupId>javax.servlet</groupId>
+    		<artifactId>javax.servlet-api</artifactId>
+    		<version>4.0.0-b01</version>
+		</dependency>
+		<!--file upload-->
+		<dependency>
+    		<groupId>commons-fileupload</groupId>
+    		<artifactId>commons-fileupload</artifactId>
+    		<version>1.3.1</version>
+		</dependency>
+		<!--jackson-->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.7.0-rc2</version>
+			<version>2.7.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.7.0-rc2</version>
+			<version>2.7.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
-			<version>2.7.0-rc2</version>
+			<version>2.7.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.0-b01</version>
-		</dependency>
-
-		<!--Spring/SpringMVC-->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
-		<!--Mybatis-->
-		<dependency>  
-			<groupId>org.mybatis</groupId>  
-			<artifactId>mybatis</artifactId>  
-			<version>3.3.0</version>  
-		</dependency> 
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis-spring</artifactId>
-			<version>1.2.3</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-dbcp</groupId>
-			<artifactId>commons-dbcp</artifactId>
-			<version>1.4</version>
-		</dependency>
-
-		<!--web.xml jackson for IE JSON Problem-->
-		<!--
-		  <dependency>
-			  <groupId>org.codehaus.jackson</groupId>
-				  <artifactId>jackson-mapper-asl</artifactId>
-					  <version>1.9.13</version>
-					  </dependency>
-				  -->
-
-		<!--file upload-->
-		<dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-			<version>1.3.1</version>
-		</dependency>
-
-		<!--mysql driver-->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.38</version>
-		</dependency>
-
-		<!--data source-->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-			<version>1.0.16</version>
-		</dependency>
-
+		<!--TOOLs-->
+		<!--<dependency>-->
+			<!--<groupId>log4j</groupId>-->
+			<!--<artifactId>log4j</artifactId>-->
+			<!--<version>1.2.17</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.alibaba</groupId>-->
+			<!--<artifactId>fastjson</artifactId>-->
+			<!--<version>1.2.7</version>-->
+		<!--</dependency>-->
 	</dependencies>
-
 
 </project>

@@ -4,6 +4,33 @@ Import existing maven project
 
 # Project Properties
 
+## [**pom.xml**](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/pom.xml)
+
+* `<build>` need specify *Java* and *Dynamic Web Application* Version
+	
+	```
+	<build>
+		<finalName>realmvc</finalName>
+
+		<!--eclipse needed-->
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.8</source> <!-- yours Java version -->
+					<target>1.8</target> <!-- yours Java version -->
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+	```
+
+## Check & Revise
+
 * Java Build Path
 
 	```

@@ -3,6 +3,7 @@
 * [Basic](#basic)
 
 <a id="create_project"></a>
+<a id="dependency"></a>
 
 # Create Project
 
@@ -29,3 +30,11 @@ mvn eclipse:clean
 #Create war package
 mvn package
 ```
+
+<a id="dependency"></a>
+
+# Dependency
+
+* Load Order
+
+	the Version maybe affected by loading order, cause ClassNotFound error.

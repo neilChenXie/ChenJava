@@ -2,6 +2,8 @@
 This project will store **experience, template and other important things** to make my java development work more easilier.
 And **Framework File** and **Procedures** are based on **Spring Framework**
 
+[Video Tutorial](http://pan.baidu.com/s/1bnVKg1p)
+
 ## Contain
 * [maven](https://github.com/neilChenXie/java_dev/tree/master/maven)
 * [eclipse](https://github.com/neilChenXie/java_dev/tree/master/eclipse)

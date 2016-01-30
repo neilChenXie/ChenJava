@@ -1,9 +1,14 @@
+#Abstract
+
+[Youtube Tutorial](https://www.youtube.com/playlist?list=PL92E89440B7BFD0F6)
+
 # Index
+
 * [Create Project](#create_project)
 * [Basic](#basic)
+* [Dependency](#dependency)
 
 <a id="create_project"></a>
-<a id="dependency"></a>
 
 # Create Project
 
@@ -26,6 +31,12 @@ mvn eclipse:eclipse
 
 #Clean eclipse related files
 mvn eclipse:clean
+
+#Compile
+mvn compile
+
+#Test
+mvn test
 
 #Create war package
 mvn package

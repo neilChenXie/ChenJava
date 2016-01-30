@@ -32,9 +32,10 @@
 	<name>study Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
-	<!--<properties>-->
-          <!--<spring.version>4.2.4.RELEASE</spring.version>-->
-	<!--</properties>-->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.2.4.RELEASE</spring.version>
+	</properties>
 
 	<!--jar package dependencies-->
 	<dependencies>

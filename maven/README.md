@@ -23,15 +23,18 @@ mvn archetype:generate \
 # Basic 
 
 ```bash
+#####Clean####
 #Clean war package
 mvn clean
 
-#Download dependencies and build for eclipse
+#####Eclipse#####
+#Create Eclipse specific file Before importing
 mvn eclipse:eclipse
 
 #Clean eclipse related files
 mvn eclipse:clean
 
+#####After Write(Not Eclipse related Independent)#####
 #Compile
 mvn compile
 

@@ -34,25 +34,38 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 # Basic
 
-## relation
+## How to start a project
 
-* maven is used to create, manage dependencies and packing to publish.
+1. maven(create project)
+2. eclipse import(change some necessary changes)
+3. create Mybatis Dao, Mapping, Model and Import
+4. add spring.xml, spring-mybatis.xml, \*.properties files
+5. write Service
+6. test Service with JUnit
+7. import spring-servlet.xml, revise it and web.xml
+8. test with Jetty(Tomcat)
 
-* eclipse used to create package, class, autocomplete, debug. (I am using eclim(vim+eclipse) to edit)
+## Relationship
 
-* mybatis is used for Model
+* **maven** is used to create project(pom.xml + folders), manage dependencies and packing to publish.
 
-* springmvc is used for Controller, Views and Integrate Mybatis.
+* **eclipse** used to create package, class, autocomplete, debug. (I am using eclim(vim+eclipse) to edit)
 
-## classpath & classpath\*
+* **mybatis** is used for Model
+
+* **spring** is used for **integrating** Controller, Views and Mybatis.
+
+## Concepts
+
+### classpath & classpath\*
 
 * classpath: path under `target/classes`
 
 * classpath\*:
 
-## bean
+### bean
 
-spring is a object **container**, Bean is one object will be created in the container
+spring is a object **container**, every **Bean** is one object will be created in the container
 
 <a id="framework_file"></a>
 

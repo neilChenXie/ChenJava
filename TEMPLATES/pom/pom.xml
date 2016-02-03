@@ -7,6 +7,17 @@
 	<!--Maven Project Based-->
 	<groupId>com.chen</groupId>
 	<artifactId>realmvc</artifactId>
+	
+	<properties>
+		<!--general-->
+		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!--custome-->
+		<spring.version>4.2.4.RELEASE</spring.version>
+	</properties>
+
 	<build>
 		<finalName>realmvc</finalName>
 
@@ -34,7 +45,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.2.4.RELEASE</spring.version>
 	</properties>
 
 	<!--jar package dependencies-->

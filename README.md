@@ -36,13 +36,13 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 ## How to start a project
 
-1. maven(create project)
-2. eclipse import(change some necessary changes)
-3. create Mybatis Dao, Mapping, Model and Import
-4. add spring.xml, spring-mybatis.xml, \*.properties files
-5. write Service
-6. test Service with JUnit
-7. import spring-servlet.xml, revise it and web.xml
+1. **maven**(create project)
+2. **eclipse** import(change some necessary changes)
+3. create **Mybatis** Dao, Mapping, Model and Import
+4. add **spring.xml**, **spring-mybatis.xml**, **\*.properties** files
+5. write **Service**
+6. test Service with **JUnit**
+7. import **spring-servlet.xml**, revise it and **web.xml**
 8. test with Jetty(Tomcat)
 
 ## Relationship

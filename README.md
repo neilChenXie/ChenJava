@@ -4,7 +4,8 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 [Video Tutorial](http://pan.baidu.com/s/1bnVKg1p)
 
-## Contain
+**Folder**
+
 * [maven](https://github.com/neilChenXie/java_dev/tree/master/maven)
 * [eclipse](https://github.com/neilChenXie/java_dev/tree/master/eclipse)
 * [mybatis](https://github.com/neilChenXie/java_dev/tree/master/mybatis)
@@ -13,15 +14,21 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 * [Basic](#basic) 
 
-	`some important tips`
+	```
+	some important tips
+	```
 
 * [Framework Files](#framework_file) 
 
-	`how xml and other files work together`
+	```
+	how xml and other files work together
+	```
 
 * [Procedure]('#program_procedure') 
 
-	`how create, test and run step-by-step`
+	```
+	how create, test and run step-by-step
+	```
 
 * [eclipse special](https://github.com/neilChenXie/java_dev/tree/master/eclipse#deploy)
 
@@ -67,6 +74,17 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 spring is a object **container**, every **Bean** is one object will be created in the container
 
+### Annotation
+
+* `@Service`
+
+	For **spring** to put the **interface implement** in the **container**.
+
+* `@Autowired`
+
+	Auto **set**(give value of implement) to the **interface** that is using in **this** class.  
+
+
 <a id="framework_file"></a>
 
 # Framework File
@@ -99,7 +117,7 @@ Must contained inside a project.
 
 	* `<context:component-scan />`
 	
-		auto **scan** **@Service** and execute **@Autowired**
+		auto **scan** **@Service** and execute **@Autowired**.
 
 	* `<import>`
 

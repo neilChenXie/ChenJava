@@ -58,3 +58,7 @@
 	As you will not have eclipse publishing/exporting the project it is safe to exclude it. But either way it makes no difference
 	Step by step screenshots:
 	[link](http://publib.boulder.ibm.com/infocenter/radhelp/v8/index.jsp?topic=/com.ibm.javaee.doc/topics/tlooseclasspath.html)
+
+* Cannot change version of project facet Dynamic Web Module to 2.3. When I set the project with version 3.0.
+
+	Delete the **\*.dtd** in **web.xml**

@@ -15,17 +15,16 @@ The note is based on `<大话设计模式>`
 * Object & Class
 	Object is instance of Class
 
-## UML
+* UML
+	* unit(class): 1.name 2.param 3.operation 
+	* connect:
+		* no tail, block head: inherit
+		* no tail, line head: association(need to know other)
+		* imaginary, line head: dependency
+		* imaginary, block head: implement
+		* black tail: compostition(strong own, # of instance) * white tail: aggregation(week own, array inside) 
 
-* unit(class): 1.name 2.param 3.operation 
-* connect:
-	* no tail, block head: inherit
-	* no tail, line head: association(need to know other)
-	* imaginary, line head: dependency
-	* imaginary, block head: implement
-	* black tail: compostition(strong own, # of instance) * white tail: aggregation(week own, array inside) 
-
-## Relation
+##Logic
 
 ### Factory Related Pattern
 
@@ -43,7 +42,7 @@ No **hard code**
 
 **Conclusion**: simple factory with reflection.
 
-##Understand
+##Unit
 
 ###Simple Factory
 

@@ -15,40 +15,7 @@ The note is based on `<大话设计模式>`
 * Object & Class
 	Object is instance of Class
 
-
-## Simple Factory
-
-create **object** based on **input**, return with **parent type object** and **children override method**. (Virtual Function e.g.)
-
-### inheritance
-* **parent** specify parameter and **virtual** method
-* **children** inheritance and override method
-
-### Main()
-* `main` create `factory` **object**
-* **factory** create **parent** with **children method**
-
-```java
-public main() {
-	Factory f = new Factory();
-	Parent obj = factory.create("kid2");
-	obj.getResult();
-}
-
-public class Factory {
-	public create(String s) {
-		switch(s) {
-			case "kid2": return new child2();	
-		}	
-	}	
-}
-```
-
-### When Change
-
-change **related child** and **factory create method**
-
-### UML
+## UML
 
 * unit(class): 1.name 2.param 3.operation 
 * connect:
@@ -56,74 +23,74 @@ change **related child** and **factory create method**
 	* no tail, line head: association(need to know other)
 	* imaginary, line head: dependency
 	* imaginary, block head: implement
-	* black tail: compostition(strong own, # of instance)
-	* white tail: aggregation(week own, array inside)
+	* black tail: compostition(strong own, # of instance) * white tail: aggregation(week own, array inside) 
 
+## Relation
 
-## Strategy
+### Factory Related Pattern
 
-encapsulate change. when: Different time use different business strategy.
+Simple Factory 
+=> (Dependency Reversal, Factory Interface, client decide)
+Factory Method 
+=> (When: Multiple product interface)
+Abstract Factroy
+=> (Problem: modify too many when add)
+Simple Factory with multiple method
+=> (Reflection)
+No `switch` and `case`
+=> (How: Dependency Injection, XML configue)
+No **hard code**
+
+**Conclusion**: simple factory with reflection.
+
+##Understand
+
+###Simple Factory
 
 ```java
-public static void main() {
-	Context c = new Context("kid2");
-	c.getResult();
-}
-
-public class Context {
-	private Parent p;
-	public Context(String s) {
-		switch(s) {
-			case "kid2": this.p = new child2();	
+class Sf {
+	public Parent create(input) {
+		switch(input) {
+			case "kid";
+				Parent p = new child();
 		}
+		return p;
 	}
-	public getResult() {
+}
+```
+
+###Strategy
+
+```java
+class Context {
+	private Parent p;
+	
+	public Context(input) {
+		switch(input) {
+			case "kid":
+				this.p = new child();
+		}	
+	}
+
+	public int result() {
 		return p.getResult();	
 	}
 }
 ```
 
-## Reflection
+###Factory Method
 
-replace all `switch`.
+compare to **simple factory**:
+New: Factory Interface
+	* Obey **open-close** when extend.
+	* Client **decide** which Factory to use
 
-```java
+###Abstract Factory
 
-public class Context {
-	private Parent p;
-	public Context(String s) {
-		Class c = Class.forName(s);
-		this.p = c.newInstance();
-	}
-}
-```
+multiple factories with **factory method**
 
-## Abstract Factory
+###Better with Reflection
 
-When multiple factories exist(different DB), need Abstract Factory.
-
-### XML
-
-**Read file** instead of **hard code**
-
-Dependency Injection
-
-## Principle
-
-### Single Responsibility Principle(SRP)
-
-### The Open-Closed Principle(OCP)
-
-open for **extension**, close for **modification**.
-
-use abstract to handle change.
-
-reject unmature abstract.
-
-### Dependency Reversal
-
-High level module not depend low level module, both depend on abstract
-
-detail depend on abstract, abstract not depend on detail
-
-Anti-Example: C library. Same business logic, different DB operation
+**Reduce** Abstract Factory back to Simple Factory with **Reflection** with **Dependency Reflection**.
+No more `switch` and `case`
+with **XML** no more **hard code**

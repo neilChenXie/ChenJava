@@ -10,8 +10,8 @@ This will include much **concept-related** experience, and it\'s for **second-st
 	1. Factory, Factory Method, Abstract Factory, Reflection Combination
 	2. Dependency Reversal
 	3. Dependency Injection
-
-2. [Spring Tutorial](http://www.tutorialspoint.com/spring/)
+2. [POJO](http://blog.sina.com.cn/s/blog_a29ae6fe01012exn.html)
+3. [Spring Tutorial](http://www.tutorialspoint.com/spring/)
 
 ## Bug & Experience
 

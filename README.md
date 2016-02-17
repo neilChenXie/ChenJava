@@ -9,8 +9,8 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 #Folders
 
-* \_TEMPLATE: generally, except `TODO:`, others don\'t need to care about.(Need to understand whole file)
-* \_Study: Notes about **spring**, **tomccat**, **ngnix**, **redis** and so on
+* \_TEMPLATE	generally, except `TODO:`, others don't need to care about.(Need to understand whole file)
+* \_Study		Notes about **spring**, **tomcat**, **ngnix**, **redis** and so on
 
 
 # Contents

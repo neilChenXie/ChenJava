@@ -2,7 +2,10 @@
 
 ## Abstract
 
+Based on `Spring Tutorial`
+
 This will include much **concept-related** experience, and it\'s for **second-stage** study
+
 
 ## Read List
 
@@ -15,15 +18,13 @@ This will include much **concept-related** experience, and it\'s for **second-st
 
 ## Logic
 
-Dependency Injecting => Injecting Inner Beans => Injecting Collection => 
+Dependency Injecting => Injecting Inner Beans => Injecting Collection
 
 XML Configuration => Annotation Based Configuration
 
 Event Handling => Customer Event
 
 ## Unit
-
-Based on `Spring Tutorial`
 
 ### IoC Container
 

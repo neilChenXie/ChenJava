@@ -2,34 +2,18 @@
 This project will store **experience, template and other important things** to make my java development work more easilier.
 And **Framework File** and **Procedures** are based on **Spring Framework**
 
-[Video Tutorial](http://pan.baidu.com/s/1bnVKg1p)
+##Study Process(Serial)
 
-## Contents
+1. [Video Tutorial](http://pan.baidu.com/s/1bnVKg1p): Create first springmvc application
+2. [Spring](https://github.com/neilChenXie/java_dev/tree/master/_Study/spring)
+
+# Contents
 
 * [Basic](#basic) 
-
-	```
-	some important tips
-	```
-
 * [Framework Files](#framework_file) 
-
-	```
-	how xml and other files work together
-	```
-
 * [Procedure]('#program_procedure') 
-
-	```
-	how create, test and run step-by-step
-	```
-
 * [eclipse special](https://github.com/neilChenXie/java_dev/tree/master/eclipse#deploy)
 
-	```
-	when use eclipse, eclim or other eclipse based IDE, THIS STEP IS NECESSARY
-	Otherwise, cannot find any maven jar files
-	```
 
 <a id="basic"></a>
 
@@ -56,50 +40,17 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 * **spring** is used for **integrating** Controller, Views and Mybatis.
 
-## Concepts
-
-### classpath & classpath\*
-
-* classpath: path under `target/classes`
-
-* classpath\*:
-
-### spring
-
-  The Spring container is at the core of the Spring Framework. The container will create the objects, wire them together, configure them, and manage their complete lifecycle from creation till destruction.
-
-  The container gets its instructions on what objects to instantiate, configure, and assemble by reading configuration metadata provided. The configuration metadata can be represented either by XML, Java annotations, or Java code.
-
-[Detail](http://www.tutorialspoint.com/spring/spring_ioc_containers.htm)
-
-### bean
-
-The objects that form the backbone of your application and that are managed by the Spring IoC container are called beans.
-
-[Detail](http://www.tutorialspoint.com/spring/spring_bean_definition.htm)
-
-### Annotation
-
-* `@Service`
-
-	For **spring** to put the **interface implement** in the **container**.
-
-* `@Autowired`
-
-	Auto **set**(give value of implement) to the **interface** that is using in **this** class.  
 
 
 <a id="framework_file"></a>
 
 # Framework File
 
-There are templates under [TEMPLATE](https://github.com/neilChenXie/java_dev/tree/master/TEMPLATES) folder
-
 ## Core
 
 Must contained inside a project. 
 
-* [pom.xml](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/pom.xml)
+* pom.xml
 
 	* **maven** project information
 
@@ -107,7 +58,7 @@ Must contained inside a project.
 
 		jar package dependencies
 
-* [spring.xml](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/resources/configs/spring.xml)
+* spring.xml
 
 	**core** config file for **spring**.
 
@@ -127,7 +78,7 @@ Must contained inside a project.
 
 		can import **spring-mybatis.xml** to integrate **mybatis**.
 
-* [spring-mybatis.xml](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/resources/configs/spring-mybatis.xml)
+* spring-mybatis.xml
 
 	specify **elements** for **mybatis**
 
@@ -140,7 +91,7 @@ Must contained inside a project.
 
 		where is **DAO** package
 
-* [spring-mvc.xml](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/resources/configs/spring-servlet.xml)
+* spring-mvc.xml
 
 	* `<context:component-scan />`
 
@@ -154,7 +105,7 @@ Must contained inside a project.
 
 		specify **static** files
          
-* [web.xml](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/WEB-INF/web.xml)
+* web.xml
 
 	Load **all** xml files of this project
 
@@ -200,7 +151,7 @@ Being imported by **xml** files to set **easily changed variables**
 
 # Procedure
 
-* [Create](#create)
+* [Create Project](#create)
 * [JUnit Test](#junit_test)
 * [Spring MVC](#spring_mvc)
 

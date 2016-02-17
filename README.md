@@ -5,7 +5,7 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 ##Study Process(Serial)
 
 1. [Video Tutorial](http://pan.baidu.com/s/1bnVKg1p): Create first springmvc application
-2. [Spring](https://github.com/neilChenXie/java_dev/tree/master/_Study/spring)
+2. [Spring&MVC](https://github.com/neilChenXie/java_dev/tree/master/_Study/spring%26mvc): Tutorial&Experience
 
 # Contents
 

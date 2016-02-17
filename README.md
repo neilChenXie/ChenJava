@@ -5,12 +5,14 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 ##Study Process(Serial)
 
 1. [Video Tutorial](http://pan.baidu.com/s/1bnVKg1p): Create first springmvc application
-2. [Spring&MVC](https://github.com/neilChenXie/java_dev/tree/master/_Study/spring%26mvc): Tutorial&Experience
+2. [Spring&MVC](https://github.com/neilChenXie/java_dev/tree/master/_STUDY/spring%26mvc): Tutorial&Experience
 
 #Folders
 
-* \_TEMPLATE	generally, except `TODO:`, others don't need to care about.(Need to understand whole file)
-* \_Study		Notes about **spring**, **tomcat**, **ngnix**, **redis** and so on
+* \_TEMPLATE
+	* generally, except `TODO:`, others don't need to care about.(Need to understand whole file)
+* \_Study
+	* Notes about **spring**, **tomcat**, **ngnix**, **redis** and so on
 
 
 # Contents

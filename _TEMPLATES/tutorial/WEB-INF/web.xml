@@ -12,8 +12,8 @@
 
 	<!--encoding filter-->
 	<filter>
-		<description>coding filter</description>
 		<filter-name>encodingFilter</filter-name>
+		<description>coding filter</description>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 		<init-param>
 			<description>encoding</description>

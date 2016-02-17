@@ -4,12 +4,6 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 [Video Tutorial](http://pan.baidu.com/s/1bnVKg1p)
 
-**Folder**
-
-* [maven](https://github.com/neilChenXie/java_dev/tree/master/maven)
-* [eclipse](https://github.com/neilChenXie/java_dev/tree/master/eclipse)
-* [mybatis](https://github.com/neilChenXie/java_dev/tree/master/mybatis)
-
 ## Contents
 
 * [Basic](#basic) 

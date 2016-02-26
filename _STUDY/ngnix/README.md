@@ -22,6 +22,9 @@ prevent no server_name request in \[1\].
 
 ## Location
 
+###location search order:
+1. 
+
 ### location modifiers
     * = exact the same
     * ~ case-sensitive reg

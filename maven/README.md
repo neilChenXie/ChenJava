@@ -1,8 +1,8 @@
-#Abstract
+# Abstract
 
 [Youtube Tutorial](https://www.youtube.com/playlist?list=PL92E89440B7BFD0F6)
 
-# Index
+## Index
 
 * [Create Project](#create_project)
 * [Basic](#basic)
@@ -10,17 +10,31 @@
 
 <a id="create_project"></a>
 
-# Create Project
+## Create Project
+
+### Single java project
+
+```bash
+mvn archetype:generate \
+	-DarchetypeArtifactId=maven-archetype-quickstart \
+	-DgroupId=[e.g. com.chen] -DartifactId=[e.g spring]
+```
+
+### Single Web Project
 
 ```bash
 mvn archetype:generate \
 	-DarchetypeArtifactId=maven-archetype-webapp \
-	-DgroupId=[e.g. com.chen] -DartifactId=[e.g spring] 
+	-DgroupId=[e.g. com.chen] -DartifactId=[e.g spring]
 ```
+
+### Parent-Children project
+
+Just run the **same** code **inside** parent project
 
 <a id="basic"></a>
 
-# Basic 
+# Basic
 
 ```bash
 #####Clean####

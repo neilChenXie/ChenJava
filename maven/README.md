@@ -16,6 +16,7 @@
 
 ```bash
 mvn archetype:generate \
+    -DinteractiveMode=false \
 	-DarchetypeArtifactId=maven-archetype-quickstart \
 	-DgroupId=[e.g. com.chen] -DartifactId=[e.g spring]
 ```
@@ -24,6 +25,7 @@ mvn archetype:generate \
 
 ```bash
 mvn archetype:generate \
+    -DinteractiveMode=false \
 	-DarchetypeArtifactId=maven-archetype-webapp \
 	-DgroupId=[e.g. com.chen] -DartifactId=[e.g spring]
 ```

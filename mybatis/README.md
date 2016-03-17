@@ -5,8 +5,8 @@ This include some **understand** of Mybatis, related **Tools** and **xml file te
 ## Content
 
 * [Relationship](#relationship)
- 
-* [Bug/Exp](#bug)
+
+* [Careful](#bug)
 
 * [Reference](#reference)
 
@@ -20,16 +20,20 @@ This include some **understand** of Mybatis, related **Tools** and **xml file te
 **mapping/\*.xml, dao, service, serviceImpI**
 
 * **Interface**
-	
+
 	* dao
 
 	* service
 
 * **Implement**
 
-	* mapping/\*.xml is the implement of dao, be `@Autowired` by serviceImpI
+	* mapping/\*.xml
 
-	* serviceImpI is the implement of service, be `@Autowired` by Test, Controller or something else.
+        * the implement of dao, be `@Autowired` by serviceImpI
+
+	* serviceImpI
+
+        * the implement of service, be `@Autowired` by Test, Controller or something else.
 
 ### mapping/\*.xml
 
@@ -54,9 +58,9 @@ This include some **understand** of Mybatis, related **Tools** and **xml file te
 	* `<extends>`
 
 * Tag inside
-	
+
 	* `<association>`
-		
+
 		Same as `<collection>`, for return value is a Object.
 
 	* `<collection>`
@@ -64,13 +68,13 @@ This include some **understand** of Mybatis, related **Tools** and **xml file te
 		* select multiple times(**Not recommanded**)
 
 			property="[nameInDao]" column="[InputColumn]" javaType="[list]" select="[selectTagName]"
-		
+
 		* join result
 
 			property="[nameInDao]" javaType="[list]" ofType="[elementType]"
 
 			* `<id>`
-				
+
 				property="[nameInModel]" column="[aliasInPreviousResult]"
 
 			* `<result>`
@@ -78,7 +82,7 @@ This include some **understand** of Mybatis, related **Tools** and **xml file te
 
 <a id="bug"></a>
 
-## Bug/Exp
+## Careful
 
 * mapping/\*.xml should be put under **src/main/resource** instead of **src/main/java**.
 

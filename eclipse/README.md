@@ -3,15 +3,15 @@
 * [Setting](#setting)
 * **[Deploy](#deploy)**
 * [Plugin](#plugin)
-* [Odd Problem](#odd_problem)
+* [Careful](#odd_problem)
 
 
 <a id="setting"></a>
 
-# Setting
+## Setting
 
 * Autocomplete
-	
+
 	```
 	Preference->Java->Editor->Content Assist
 	```
@@ -26,16 +26,43 @@
 
 	```
 	Preference->Maven->User Settings(apache-maven-*.*.*/conf/settings.xml)
-	settings.xml: <localRepotory>[Location for store *.jar]</localRepotory> 
+	settings.xml: <localRepotory>[Location for store *.jar]</localRepotory>
 	```
 
 	[Crucial Setting](https://github.com/neilChenXie/java_dev/blob/master/eclipse/MavenProject.md)
 
 * Package Explore
 
+    ```
+    window->show view->other->package explore
+    ```
+
+* Code Style
+
+    ```
+    window->preference->Java->Code style->code template->comment->Types/Methods
+    Types:
+    /**
+    * @describe
+    *
+    * @author ${user}
+    * @date ${date}
+    */
+
+    Method:
+    /**
+    * @describe
+    *
+    * @author ${user}
+    * @date ${date}
+    * @param
+    * @return
+    */
+    ```
+
 <a id="deploy"></a>
 
-#Deploy
+## Deploy
 
 * When deploy to **Tomcat**, need set **Deployment Assembly**.
 
@@ -43,22 +70,14 @@
 
 <a id="plugin"></a>
 
-# Plugin
+## Plugin
 
 * Rinzo(xml)/vrapper(vim)
 
 <a id="odd_problem"></a>
 
-#Odd Problem
+## Careful
 
-* Classpath entry org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER will not be exported
-	You can right click on the warning, choose quickfix and choose one of the following:
-		1. Mark the associated raw classpath entry as a publish/export dependency.
-		2. Exclude the associated raw classpath entry from the set of potential publish/export dependencies.
-	As you will not have eclipse publishing/exporting the project it is safe to exclude it. But either way it makes no difference
-	Step by step screenshots:
-	[link](http://publib.boulder.ibm.com/infocenter/radhelp/v8/index.jsp?topic=/com.ibm.javaee.doc/topics/tlooseclasspath.html)
+* **Delete** the **\*.dtd** in **web.xml**
 
-* Cannot change version of project facet Dynamic Web Module to 2.3. When I set the project with version 3.0.
-
-	Delete the **\*.dtd** in **web.xml**
+* **Don't** import **Existing Maven Project**, import **Existing Project**.

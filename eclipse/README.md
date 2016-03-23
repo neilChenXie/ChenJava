@@ -1,7 +1,7 @@
 # Start
 
 * [Setting](#setting)
-* **[Deploy](#deploy)**
+* [Deploy](#deploy)
 * [Plugin](#plugin)
 * [Careful](#odd_problem)
 
@@ -10,16 +10,19 @@
 
 ## Setting
 
-* Autocomplete
+* Auto-complete
 
 	```
 	Preference->Java->Editor->Content Assist
+    trigger:
+    ._qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM
 	```
 
 * File Encoding
 
 	```
 	Preference->General->Workspace/Content Types
+    set to UTF-8
 	```
 
 * Maven
@@ -64,6 +67,18 @@
 
 ## Deploy
 
+Server Application
+
+### Jetty
+
+* Install `Jetty eclipse plug-in`
+
+    ```
+    Run->Run Configurations->Jetty Webapp->New->project & port number
+    ```
+
+### Tomcat
+
 * When deploy to **Tomcat**, need set **Deployment Assembly**.
 
 	(project) properties->Deployment Assembly->Add->Java Build Path Entries, add all to the project
@@ -73,6 +88,7 @@
 ## Plugin
 
 * Rinzo(xml)/vrapper(vim)
+
 
 <a id="odd_problem"></a>
 

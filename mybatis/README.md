@@ -84,7 +84,7 @@ This include some **understand** of Mybatis, related **Tools** and **xml file te
 
 ## Careful
 
-* mapping/\*.xml should be put under **src/main/resource** instead of **src/main/java**.
+* **mapping/\*.xml** should be put under **src/main/resource** instead of **src/main/java**.
 
 
 <a id="reference"></a>
@@ -95,10 +95,10 @@ This include related tools and files.
 
 ### Related Tool
 
-	* [generator](https://github.com/neilChenXie/java_dev/tree/master/mybatis/generator)
+* [generator](https://github.com/neilChenXie/java_dev/tree/master/mybatis/generator)
 
-		`used for generating dao, model and mapping`
+    * used for generating dao, model and mapping
 
 ### Related XML file
 
-	* [spring-mybatis.xml](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/resources/configs/spring-mybatis.xml)
+* [spring-mybatis.xml](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/resources/configs/spring-mybatis.xml)

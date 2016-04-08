@@ -1,8 +1,8 @@
 # Tips
 
-Useful Hot Key
+Useful Hot Key, blow is categorized by different working phase.
 
-## Editor
+## Edit
 
 * Ctrl + D: cut one line
 * Alt + Shift + A: block edit
@@ -10,7 +10,7 @@ Useful Hot Key
 * Alt + up/down: move line.
 * Ctrl + Alt + up/down: copy line
 
-## Search & Jump
+## Read
 
-* `F3` go to definition
+* `F3` go to definition, `Alt + <-` go back to previous visited file.
 * `Ctrl + Shift + R` **file** level search

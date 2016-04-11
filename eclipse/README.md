@@ -93,6 +93,18 @@ Useful Hot Key, blow is categorized by different working phase.
 
 ### Debug
 
+
+## Plug-in
+
+### jadclipse
+
+1. [net.sf.jadclipse_3.3.0.jar](https://sourceforge.net/projects/jadclipse/)
+2. [executable jad](http://varaneckas.com/jad/)
+3. put **net.sf.jadclipse_3.3.0.jar** into **eclipse plugins**
+4. restart eclipse
+5. `Preference->Java->JadClipse` add `path/to/jad.exe`, configre temp files
+6. `Preference->General->Editor->File Associations`: **\*.class** and **\*.class without source file** default **jadClipse class file viewer**
+
 ## Deploy
 
 Server Application

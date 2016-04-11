@@ -2,7 +2,6 @@
 
 * [Setting](#setting)
 * [Deploy](#deploy)
-* [Plugin](#plugin)
 * [Careful](#odd_problem)
 
 
@@ -34,6 +33,12 @@
 
 	[Crucial Setting](https://github.com/neilChenXie/java_dev/blob/master/eclipse/MavenProject.md)
 
+* JDK
+
+    ```
+    Preference->Java->User Installed JREs(/jdk*.*.*_*)
+    ```
+
 * Package Explore
 
     ```
@@ -63,7 +68,27 @@
     */
     ```
 
+
 <a id="deploy"></a>
+
+## Tips
+
+Useful Hot Key, blow is categorized by different working phase.
+
+### Edit
+
+* Ctrl + D: cut one line
+* Alt + Shift + A: block edit
+* Shift + Enter / Ctrl + Shift + Enter: vim 'o' / 'O'
+* Alt + up/down: move line.
+* Ctrl + Alt + up/down: copy line
+
+### Read
+
+* `F3` go to definition, `Alt + <-` go back to previous visited file.
+* `Ctrl + Shift + R` **file** level search
+
+### Debug
 
 ## Deploy
 
@@ -82,12 +107,6 @@ Server Application
 * When deploy to **Tomcat**, need set **Deployment Assembly**.
 
 	(project) properties->Deployment Assembly->Add->Java Build Path Entries, add all to the project
-
-<a id="plugin"></a>
-
-## Plugin
-
-* Rinzo(xml)/vrapper(vim)
 
 
 <a id="odd_problem"></a>

@@ -1,6 +1,6 @@
 # maven-shade-plugin
 
-for jar package, all in one jar, support spring.
+jar package, all in one jar, support spring.
 
 ## Template
 
@@ -18,13 +18,15 @@ for jar package, all in one jar, support spring.
                         <goal>shade</goal>
                     </goals>
                     <configuration>
+                        <!--TODO: package name-->
                         <finalName>monitor</finalName>
                         <shadedArtifactAttached>true</shadedArtifactAttached>
+                        <!--TODO: string appended to package name-->
                         <shadedClassifierName>jar-with-dependencies</shadedClassifierName>
                         <transformers>
                             <!--Executable jar-->
                             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                <!--main class position-->
+                                <!--TODO: main class position-->
                                 <mainClass>com.sekorm.monitor.main.Monitor</mainClass>
                             </transformer>
                             <!--Spring support-->

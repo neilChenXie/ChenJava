@@ -6,7 +6,7 @@ Import existing project, **don't** import as maven project
 
 ## [**pom.xml**](https://github.com/neilChenXie/java_dev/blob/master/TEMPLATES/pom.xml)
 
-* `<build>` need specify *Java* and *Dynamic Web Application* Version
+* `<build>` need specify *Java*  Version
 
 	```
 	<build>

@@ -1,8 +1,10 @@
 # Start
 
 * [Setting](#setting)
+* [Plug-in](#plugin)
+* [Tips](#tips)
 * [Deploy](#deploy)
-* [Careful](#odd_problem)
+* [Careful](#careful)
 
 
 <a id="setting"></a>
@@ -72,7 +74,21 @@ Save **configured** and **no imported project** workspace folder as **template**
     ```
 
 
-<a id="deploy"></a>
+<a id="plugin"></a>
+
+## Plug-in
+
+### jadclipse
+
+1. [net.sf.jadclipse_3.3.0.jar](https://sourceforge.net/projects/jadclipse/)
+2. [executable jad](http://varaneckas.com/jad/)
+3. put **net.sf.jadclipse_3.3.0.jar** into **eclipse plugins**
+4. restart eclipse
+5. `Preference->Java->JadClipse` add `path/to/jad.exe`, configre temp files
+6. `Preference->General->Editor->File Associations`: **\*.class** and **\*.class without source file** default **jadClipse class file viewer**
+
+
+<a id="tips"></a>
 
 ## Tips
 
@@ -93,17 +109,10 @@ Useful Hot Key, blow is categorized by different working phase.
 
 ### Debug
 
+TODO:
 
-## Plug-in
 
-### jadclipse
-
-1. [net.sf.jadclipse_3.3.0.jar](https://sourceforge.net/projects/jadclipse/)
-2. [executable jad](http://varaneckas.com/jad/)
-3. put **net.sf.jadclipse_3.3.0.jar** into **eclipse plugins**
-4. restart eclipse
-5. `Preference->Java->JadClipse` add `path/to/jad.exe`, configre temp files
-6. `Preference->General->Editor->File Associations`: **\*.class** and **\*.class without source file** default **jadClipse class file viewer**
+<a id="deploy"></a>
 
 ## Deploy
 
@@ -124,7 +133,7 @@ Server Application
 	(project) properties->Deployment Assembly->Add->Java Build Path Entries, add all to the project
 
 
-<a id="odd_problem"></a>
+<a id="careful"></a>
 
 ## Careful
 

@@ -9,6 +9,9 @@
 
 ## Setting
 
+Workspace can be separate with project files, use separate folder to manage,
+Save **configured** and **no imported project** workspace folder as **template**
+
 * Auto-complete
 
 	```

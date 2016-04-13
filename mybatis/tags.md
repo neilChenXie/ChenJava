@@ -10,8 +10,4 @@
 
 ## More beautiful code
 
-* `<sql>`
-    * parameter: `id`
-    * use: `<include id="">`
-* `<trim>`
-    * parameter: `prefix`, `prefixOverrides`, `suffix`, `suffixOverrides`
+* [Entry Level](https://www.evernote.com/shard/s250/sh/d5178e37-ba8d-4416-9b25-81277b905e70/1a89b4937ffca01e014da393d3ba8513)

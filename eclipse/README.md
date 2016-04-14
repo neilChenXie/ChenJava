@@ -107,6 +107,7 @@ Useful Hot Key, blow is categorized by different working phase.
 
 * `F3` go to definition, `Alt + <-` go back to previous visited file.
 * `Ctrl + Shift + R` **file** level search
+* `ctrl+alt+H` where it is called
 
 ### Debug
 

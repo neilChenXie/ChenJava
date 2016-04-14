@@ -101,6 +101,7 @@ Useful Hot Key, blow is categorized by different working phase.
 * Shift + Enter / Ctrl + Shift + Enter: vim 'o' / 'O'
 * Alt + up/down: move line.
 * Ctrl + Alt + up/down: copy line
+* Getter/Setter: `source->generate Getter and Setter`
 
 ### Read
 

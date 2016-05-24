@@ -35,7 +35,7 @@ Preference->Maven->User Settings(apache-maven-*.*.*/conf/settings.xml)
 settings.xml: <localRepotory>[Location for store *.jar]</localRepotory>
 ```
 
-* [Crucial Setting](https://github.com/neilChenXie/java_dev/blob/master/eclipse/MavenProject.md)
+> [Crucial Setting](https://github.com/neilChenXie/java_dev/blob/master/eclipse/MavenProject.md)
 
 JDK
 

@@ -1,0 +1,25 @@
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" 
+		xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!--root pom-->
+	<parent>
+		<groupId><!--TODO:groupID-->com.chen</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<!--TODO:check parent pom.xml location-->
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<!--module pom-->
+	<groupId><!--TODO:groupID-->com.chen</groupId>
+	<artifactId><!--TODO:module name-->sf</artifactId>
+	<packaging>war</packaging>
+	<name><!--TODO:module name-->sf</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		<!--TODO:separate dependency-->
+	</dependencies>
+</project>

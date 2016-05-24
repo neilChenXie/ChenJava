@@ -1,6 +1,6 @@
 ---
 layout: post
-title: maven查询
+title: maven check
 date: 2016-05-24 13:46:15 +0800
 category: Maven
 tags: [setup]

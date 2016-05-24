@@ -1,6 +1,6 @@
 ---
 layout: post
-title: maven插件
+title: maven plug-ins
 date: 2016-05-24 13:46:15 +0800
 category: Maven
 tags: [template]

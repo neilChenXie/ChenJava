@@ -76,3 +76,9 @@ Method:
 windows-> Perspective -> Customize Perspective
 
 Just Select **useful** and has **no hot-key**
+
+## Plugins
+
+Theme
+
+> Eclipse Color Theme

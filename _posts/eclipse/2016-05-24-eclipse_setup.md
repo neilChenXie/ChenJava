@@ -70,3 +70,9 @@ Method:
 * @return
 */
 ```
+
+## Tool Bar
+
+windows-> Perspective -> Customize Perspective
+
+Just Select **useful** and has **no hot-key**

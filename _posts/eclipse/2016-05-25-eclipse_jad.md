@@ -6,6 +6,8 @@ category: Eclipse
 tags: [plugins]
 ---
 
+## 步骤
+
 一、下载jadClipse
 
 > [地址](https://sourceforge.net/projects/jadclipse/)
@@ -28,3 +30,7 @@ tags: [plugins]
 
 > window->preferences，搜file association， **\*.class** 和 **\*.class without
 source** 都设置默认为jadClipse打开
+
+## Tips
+
+jad 可以单独运行反编译class文件

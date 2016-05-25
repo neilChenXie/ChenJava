@@ -1,6 +1,6 @@
 ---
 layout: post
-title: eclipse 配置
+title: Eclipse 配置
 date: 2016-05-24 15:39:15 +0800
 category: Eclipse
 tags: [setup]

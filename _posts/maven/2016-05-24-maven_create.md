@@ -1,9 +1,9 @@
 ---
 layout: post
-title: maven check
+title: maven checklist
 date: 2016-05-24 13:46:15 +0800
 category: Maven
-tags: [setup]
+tags: [checklist]
 ---
 
 ## 创建工程

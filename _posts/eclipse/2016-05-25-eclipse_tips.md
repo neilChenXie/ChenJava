@@ -19,6 +19,14 @@ Useful Hot Key, blow is categorized by different working phase.
 | Shift + Enter / Ctrl + Shift + Enter | 'o' / 'O' |
 | Alt + up/down | dd+p/P, `:m n_lines` |
 | Ctrl + Alt + up/down | yy+p/P |
+| Ctrl + o | Taglist |
+| Ctrl + l | line# + G/gg |
+| Ctrl + q | g + ; |
+| Ctrl + e | ：b $BufferName |
+
+### Java Special
+
+Ctrl+t: jump to supertype/subtype
 
 ### Specific
 

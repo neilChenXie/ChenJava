@@ -42,4 +42,14 @@ Getter/Setter
 
 ### Debug
 
-TODO:
+Step into:
+
+> <F5>
+
+Step over
+
+> <F6>
+
+Continue
+
+> <F8>

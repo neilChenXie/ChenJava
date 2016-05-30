@@ -1,4 +1,11 @@
-# Mybatis
+---
+layout: post
+title: mybatis 入门
+date: 2016-05-30 13:46:15 +0800
+category: Mybatis
+tags: [entry, understand]
+---
+
 
 This include some **understand** of Mybatis, related **Tools** and **xml file template**
 

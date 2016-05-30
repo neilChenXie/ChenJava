@@ -1,4 +1,10 @@
-# Special character
+---
+layout: post
+title: mybatis 转义
+date: 2016-05-30 13:48:15 +0800
+category: Mybatis
+tags: [checklist]
+---
 
 1. 在xml的sql语句中，不能直接用大于号、小于号要用转义字符
 

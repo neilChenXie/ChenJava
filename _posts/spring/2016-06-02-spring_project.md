@@ -8,7 +8,7 @@ tags: [checklist]
 
 ## 关系
 
-![dependencies]({{ site.baseurl }}/img/spring/Spring_Project.png)
+[![dependencies]({{ site.baseurl }}/img/spring/Spring_Project.png)]({{ site.baseurl }}/img/spring/Spring_Project.png)
 
 ## 理解
 

@@ -7,4 +7,4 @@ tags: [checklist]
 ---
 
 
-![annotations]({{ site.baseurl }}/img/spring/Annotation.png)
+[![annotations]({{ site.baseurl }}/img/spring/Annotation.png)]({{ site.baseurl }}/img/spring/Annotation.png)

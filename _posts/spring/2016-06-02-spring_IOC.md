@@ -15,6 +15,6 @@ tags: [checklist]
 
 [![归类]({{ site.baseurl }}/img/spring/DI.png)]({{ site.baseurl }}/img/spring/DI.png)
 
-## <Bean>
+## `<Bean>`
 
 [![bean tag]({{ site.baseurl }}/img/spring/bean.png)]({{ site.baseurl }}/img/spring/bean.png)

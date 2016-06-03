@@ -23,3 +23,9 @@ tags: [util, packages]
 
 凡是用到 `java.io.FilenameFilter` 和 `java.io.FileFilter` 的地方都可以用
  **FileFilterUtil** 来构建
+
+### Tips
+
+#### NameFileFilter
+
+filter **full name**: "chen.md" for *chen.md*; not "chen". 

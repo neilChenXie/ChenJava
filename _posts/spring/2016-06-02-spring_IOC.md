@@ -20,3 +20,14 @@ tags: [checklist]
 `<bean>`
 
 [![bean tag]({{ site.baseurl }}/img/spring/bean.png)]({{ site.baseurl }}/img/spring/bean.png)
+
+
+## Tips
+
+自己的工厂，下面直接调工厂方法生成实例，传参为工厂方法的参数
+
+```xml
+<bean name="" class="" factory-method="">
+  <constructor-arg />
+</bean>
+```

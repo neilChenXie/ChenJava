@@ -1,22 +1,15 @@
-# spring.xml, spring-\*.xml
+---
+layout: post
+title: spring手册
+permalink: /:categories/spring_checklist
+date: 2016-06-16 13:48:15 +0800
+category: Spring
+tags: [checklist]
+---
 
-All the files are configure **bean**, which will be created during spring **bootup**.
+### spring.xml/spring-\*.xml
 
-## Start
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-```
-## Structure
-
-`<beans>` include `<bean>`
-
-
-## components
-
-###`<beans>`
-
-1. Example
+`<beans>`
 
 ```xml
 <beans	xmlns="http://www.springframework.org/schema/beans"
@@ -26,13 +19,27 @@ All the files are configure **bean**, which will be created during spring **boot
 							http://www.springframework.org/schema/beans/spring-beans.xsd
 							http://www.springframework.org/schema/context
 							http://www.springframework.org/schema/context/spring-context.xsd">
+</beans>
 ```
 
-2. Explanation
+*Explanation*
 
 * first 2 lines `xmlns` `xmlns:xsi` **do not** need change.
 * `xmlns:*` is for components which are used in the this xml, e.g. `<context>`.
     * Components means tags: `<aop>`,`<mvc>` and so on.
 * `xsi:schemaLocation` for **all** components. **non-version xsd** is recommended.
 
-### `<bean>`
+
+### web.xml
+
+`<web-app>`
+
+```xml
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://java.sun.com/xml/ns/javaee"
+		xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+		id="WebApp_ID" version="3.0">
+</web-app>
+```

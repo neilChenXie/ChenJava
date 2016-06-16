@@ -15,8 +15,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<!--custome-->
-		<spring.version>4.2.4.RELEASE<!--TODO:check version--></spring.version>
-		<!--TODO:check other component version-->
+		<!--TODO:check Java version-->
+		<jdk.version>1.8</jdk.version>
+		<!--TODO:check Spring version-->
+		<spring.version>4.2.4.RELEASE</spring.version>
 	</properties>
 
 	<build>
@@ -45,9 +47,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5<!--TODO:check--></version>
 				<configuration>
-					<source>1.8<!--TODO:check--></source> <!-- yours Java version -->
-					<target>1.8<!--TODO:check--></target> <!-- yours Java version -->
-					<encoding>UTF-8</encoding>
+					<source>${jdk.version}</source> <!-- yours Java version -->
+					<target>${jdk.version}</target> <!-- yours Java version -->
+					<encoding>${project.build.sourceEncoding}</encoding>
 				</configuration>
 			</plugin>
 		</plugins>

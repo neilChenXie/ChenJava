@@ -8,10 +8,12 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>template</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<properties>
 		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- TODO:yours Java version -->
+		<jdk.version>1.8</jdk.version>
 		<!--<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
 	</properties>
 
@@ -36,11 +38,9 @@
 				<!--TODO:check-->
 				<version>3.5</version>
 				<configuration>
-					<!-- TODO:yours Java version -->
-					<source>1.8</source>
-					<!-- TODO:yours Java version -->
-					<target>1.8</target>
-					<encoding>UTF-8</encoding>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -6,7 +6,7 @@ title: {{ site.name }}
 <div id="home">
   <h1>Blog Posts</h1>
   <!--category-->
-  {% for category in site.categories %}
+  {% for category in site.categories reversed %}
   <h2>{{ category | first }}</h2>
   <!-- </span>{{ category | last | size }}</span> -->
   <ul class="arc-list">

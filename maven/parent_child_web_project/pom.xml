@@ -1,35 +1,34 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId><!--TODO--></groupId>
-	<artifactId><!--TODO--></artifactId>
-	<packaging>war</packaging>
+	<groupId><!--TODO:groupId-->com.chen</groupId>
+	<artifactId>parent</artifactId>
+	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>tmp Maven Webapp</name>
+	<name>parent</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<!--general-->
 		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<!--custome-->
-		<spring.version>4.2.4.RELEASE<!--TODO:check version--></spring.version>
-		<!--TODO:check other component version-->
+		<!--TODO:check dependencies version-->
 	</properties>
 
 	<build>
+		<!--packaging name-->
 		<finalName>${project.artifactId}</finalName>
 
 		<!--project path-->
-		<sourceDirectory>src/main/java</sourceDirectory>
-		<testSourceDirectory>src/test/java</testSourceDirectory>
-		<outputDirectory>target/classes</outputDirectory>
-		<testOutputDirectory>target/test-classes</testOutputDirectory>
+		<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+		<testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
+		<outputDirectory>${basedir}/target/classes</outputDirectory>
+		<testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
 		<resources>
 			<resource>
-				<directory>src/main/resources</directory>
+				<directory>${basedir}/src/main/resources</directory>
 			</resource>
 		</resources>
 
@@ -38,22 +37,24 @@
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.3.7.v20160115<!--TODO:check--></version>
+				<!--TODO:check version-->
+				<version>9.3.7.v20160115</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5<!--TODO:check--></version>
+				<!--TODO:check version-->
+				<version>3.5</version>
 				<configuration>
-					<source>1.8<!--TODO:check--></source> <!-- yours Java version -->
-					<target>1.8<!--TODO:check--></target> <!-- yours Java version -->
+                    <!--TODO:check Java version-->
+					<source>1.8</source> <!-- yours Java version -->
+					<target>1.8</target> <!-- yours Java version -->
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 
-	<!--jar package dependencies-->
 	<dependencies>
 
 		<!--test-->
@@ -132,6 +133,11 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.13</version>
 		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.7</version>
+		</dependency>
 
 		<!--runtime evn-->
 		<dependency>
@@ -154,54 +160,54 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<!--springmvc-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 		<!--springtest-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${spring.version}</version>
+			<version>4.2.4.RELEASE</version>
 		</dependency>
 
 		<!--mybatis/DB-->
@@ -235,4 +241,10 @@
       	</dependency>
 
 	</dependencies>
+
+	<!--modules-->
+	<modules>
+		<!--TODO: check modules-->
+		<module>sf</module>
+	</modules>
 </project>

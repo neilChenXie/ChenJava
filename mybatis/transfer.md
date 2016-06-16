@@ -15,4 +15,5 @@ org.apache.ibatis.builder.BuilderException: Error creating document instance.  C
 | &quot; | " |  ||
 
 2. 使用
+
 <![CDATA[ ]]>标记的sql语句中的<where> <if>等标签不会被解析

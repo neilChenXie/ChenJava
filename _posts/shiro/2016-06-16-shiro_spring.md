@@ -6,7 +6,6 @@ date: 2016-06-16 09:48:15 +0800
 category: Shiro
 tags: [checklist]
 ---
-#
 
 [reference](http://blog.csdn.net/lyh_974056553/article/details/17229667)
 

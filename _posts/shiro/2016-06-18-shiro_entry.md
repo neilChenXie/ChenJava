@@ -10,3 +10,15 @@ tags: [entry]
 ### 索引
 
 [跟我学Shiro](http://jinnianshilongnian.iteye.com/blog/2018398)
+
+### 摘要
+
+![shiro structure]({{ site.baseurl }}/img/shiro/shiro_structure.png)
+
+### 理解
+
+第二章
+
+securityManager, Authenticator, AuthenticationStrategy, Realm之间的关系
+
+![shiro structure]({{ site.baseurl }}/img/shiro/chapter2.png)

@@ -19,6 +19,12 @@ tags: [entry]
 
 第二章
 
-securityManager, Authenticator, AuthenticationStrategy, Realm之间的关系
+> securityManager, Authenticator, AuthenticationStrategy, Realm之间的关系
 
 ![shiro structure]({{ site.baseurl }}/img/shiro/chapter2.png)
+
+第三章
+
+> 基于角色，基于资源的权限分配及实践
+
+![shiro structure]({{ site.baseurl }}/img/shiro/chapter3.png)

@@ -3,8 +3,8 @@ layout: post
 title: Redis 入门
 permalink: /:categories/shiro_spring_combine
 date: 2016-06-22 12:48:15 +0800
-category: Shiro
-tags: [checklist]
+category: Redis
+tags: [entry, checklist]
 ---
 
 ### 索引

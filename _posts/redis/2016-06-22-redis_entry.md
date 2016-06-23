@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Redis 入门
-permalink: /:categories/shiro_spring_combine
+permalink: /:categories/redis_entry
 date: 2016-06-22 12:48:15 +0800
 category: Redis
 tags: [entry, checklist]

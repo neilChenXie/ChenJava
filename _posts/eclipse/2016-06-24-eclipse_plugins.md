@@ -17,11 +17,14 @@ tags: [plugins, eclipse]
 > 2. 从Help/Install New Software选择添加的链接，自动更新
 > 3. 选择所要安装的包
 
+### Decompile
+
+Class Decompiler Viewer
+
+> 安装方法一
+
 ### UML
 
-Papyrus
+ModelGoon UML4Java
 
-> 安装方法2
-
-* [papyrus](http://www.eclipse.org/papyrus/download.html)
-* [get started](https://wiki.eclipse.org/Papyrus_User_Guide#Getting_Started)
+> 安装方法一

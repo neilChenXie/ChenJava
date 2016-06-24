@@ -28,3 +28,4 @@ Class Decompiler Viewer
 ModelGoon UML4Java
 
 > 安装方法一
+> 因为需要翻墙，备用方法[github backup](https://github.com/neilChenXie/ChenJava/tree/master/eclipse_plugins)

@@ -9,8 +9,9 @@ tags: [plugins, eclipse]
 
 ### 安装方法
 
-1. 直接Help/EclipseMarketPlace搜索
-2. 由Help/Install New Software安装
+一、 直接Help/EclipseMarketPlace搜索
+
+二、 由Help/Install New Software安装
 
 > 1. 在Preference/Available Software Sites中添加相关链接
 > 2. 从Help/Install New Software选择添加的链接，自动更新

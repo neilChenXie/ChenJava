@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Eclipse 插件
-permailink: /:categories/eclipse_plugins
+permalink: /:categories/eclipse_plugins
 date: 2016-06-24 10:30:15 +0800
 category: Eclipse
 tags: [plugins, eclipse]

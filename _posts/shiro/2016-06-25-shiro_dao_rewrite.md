@@ -11,4 +11,4 @@ tags: [shiro, redis, session, dao]
 
 与DAO相关类
 
-[![shiro_class]({{ site.base_url }}/img/shiro/shiro-redis.png)]({{ site.base_url }}/img/shiro/shiro-redis.png)
+[![shiro_class]({{ site.baseurl }}/img/shiro/shiro-redis.png)]({{ site.baseurl }}/img/shiro/shiro-redis.png)

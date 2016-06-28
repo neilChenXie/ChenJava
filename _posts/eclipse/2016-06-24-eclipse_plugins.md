@@ -17,6 +17,12 @@ tags: [plugins, eclipse]
 > 2. 从Help/Install New Software选择添加的链接，自动更新
 > 3. 选择所要安装的包
 
+### Color Theme
+
+Eclipse Color Theme 
+
+> 安装方法一
+
 ### Decompile
 
 Class Decompiler Viewer

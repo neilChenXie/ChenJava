@@ -1,0 +1,29 @@
+---
+layout: post
+title: FileFilter 文件过滤器
+permalink: /:categories/file_operation
+date: 2016-06-29 09:48:15 +0800
+category: IO
+tags: [util, io, file]
+---
+
+### Read File
+
+#### Small File
+
+```java
+BufferedReader br = new BufferedReader(new FileReader("file.txt"));
+try {
+  StringBuilder sb = new StringBuilder();
+  String line = br.readLine();
+
+  while (line != null) {
+    sb.append(line);
+    sb.append(System.lineSeparator());
+    line = br.readLine();
+  }
+  String everything = sb.toString();
+} finally {
+  br.close();
+}
+```

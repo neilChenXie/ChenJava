@@ -2,12 +2,12 @@
 layout: post
 title: Shiro Session 外置 Redis
 permalink: /:categories/shiro_redis_session
-date: 2016-06-29 12:48:15 +0800
+date: 2016-06-28 12:48:15 +0800
 category: Shiro
 tags: [shiro, redis, session]
 ---
 
-### 目标
+### 项目目标
 
 将Shiro的Session外置到Redis中
 

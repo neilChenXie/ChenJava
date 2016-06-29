@@ -2,7 +2,7 @@
 layout: post
 title: Shiro Combine with Spring
 permalink: /:categories/shiro_spring_combine
-date: 2016-06-16 09:48:15 +0800
+date: 2016-06-19 09:48:15 +0800
 category: Shiro
 tags: [checklist]
 ---
@@ -10,6 +10,8 @@ tags: [checklist]
 [reference](http://blog.csdn.net/lyh_974056553/article/details/17229667)
 
 ## web.xml
+
+> 将shiro加入Filter
 
 ```xml
 <!-- The filter-name matches name of a 'shiroFilter' bean inside applicationContext.xml -->
@@ -32,6 +34,7 @@ tags: [checklist]
 ```
 
 \* DelegatingFilterProxy will invoke the bean based on **name**.
+
 [Reference](http://stackoverflow.com/questions/6725234/whats-the-point-of-spring-mvcs-delegatingfilterproxy)
 
 ## spring-shiro.xml
@@ -47,6 +50,7 @@ tags: [checklist]
 <bean id="shiroRealm" class="com.shiro.realm.ShiroRealm">  
     <property name="userService" ref="userService" />  
 </bean>  
+
 <bean id="userService" class="com.shiro.service.UserService" />  
 
 <!--shiro过滤器配置，bean的id值须与web中的filter-name的值相同-->  

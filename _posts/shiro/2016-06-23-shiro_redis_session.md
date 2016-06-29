@@ -7,6 +7,8 @@ category: Shiro
 tags: [shiro, redis, session]
 ---
 
+### 目标
+
 将Shiro的Session外置到Redis中
 
 ### 索引

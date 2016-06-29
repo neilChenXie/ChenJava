@@ -30,11 +30,11 @@ tags: [shiro, redis, session]
 
 阅读示例代码
 
-> 找到[靠谱代码](http://mirrors.ustc.edu.cn/eclipse)（可运行，简单）Github，Baidu
+> 找到[靠谱代码](https://github.com/neilChenXie/shiro-redis)（可运行，简单）Github，Baidu
 
 加入Shiro源码，通过断点回追查看调用栈
 
-> [Shiro SessionDAO-redis]({{ site.baseurl }}/redis/shiro_redis_session_dao)
+> [Shiro SessionDAO-redis]({{ site.baseurl }}/shiro/shiro_redis_session_dao)
 
 总结AbstractSessionDAO需要实现的几个方法的任务
 

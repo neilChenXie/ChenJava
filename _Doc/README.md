@@ -1,5 +1,4 @@
 # Abstract
-
 This project will store **experience, template and other important things** to make my java development work more easilier.
 And **Framework File** and **Procedures** are based on **Spring Framework**
 
@@ -18,7 +17,7 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 # Contents
 
-* [Basic](#basic)
+* [Basic](#basic) 
 * [Framework Files](#framework_file):pom.xml, spring.xml, spring-mybatis.xml, spring-servlet.xml
 * [Procedure]('#program_procedure'):Create Project, JUnit Test, Web App
 * [eclipse special](https://github.com/neilChenXie/java_dev/tree/master/eclipse#deploy)
@@ -57,7 +56,7 @@ And **Framework File** and **Procedures** are based on **Spring Framework**
 
 ## Core
 
-Must contained inside a project.
+Must contained inside a project. 
 
 * pom.xml
 
@@ -80,7 +79,7 @@ Must contained inside a project.
 			* in **spring-mybatis.xml**: `<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">` inside cannot use properties
 
 	* `<context:component-scan />`
-
+	
 		auto **scan** **@Service** and execute **@Autowired**.
 
 	* `<import>`
@@ -93,7 +92,7 @@ Must contained inside a project.
 
 	* **data source** change when changed
 
-	* `<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">`
+	* `<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">` 
 
 		where is **mapper.xml** files
 	* `<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">` inside cannot use properties
@@ -106,20 +105,20 @@ Must contained inside a project.
 
 		**scan** for **@Controller**
 
-	* `<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">`
+	* `<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">` 
 
 		specify **views** folder ,**.jsp** suffix.
 
-	* `<mvc:resources />`
+	* `<mvc:resources />` 
 
 		specify **static** files
-
+         
 * web.xml
 
 	Load **all** xml files of this project
 
 	* `<context-param>`
-
+	
 		* load **spring.xml** and **spring-mybatis.xml**
 		* **critical**
 
@@ -186,7 +185,7 @@ Being imported by **xml** files to set **easily changed variables**
 
 9. (Eclipse/Editor) write Controllers and Views
 
-10. (Eclipse) Deploy to test **URL connection**
+10. (Eclipse) Deploy to test **URL connection** 
 
 <a id="junit_test"></a>
 
@@ -197,7 +196,7 @@ Work with **Junit** and **Spring-test** (need these 2 maven dependency jar)
 1. Load xml Files and Create Beans(2 ways)
 
 	1. spring.xml include others(spring-mybatis.xml)
-
+		
 		```xml
 		<!--import resource-->
 		<import resource="classpath:configs/spring-mybatis.xml" />
@@ -209,7 +208,7 @@ Work with **Junit** and **Spring-test** (need these 2 maven dependency jar)
 		```
 
 	2. Junit and Spring-test
-
+		
 		```xml
 		<!--import resource-->
 		<!--<import resource="classpath:configs/spring-mybatis.xml" />-->

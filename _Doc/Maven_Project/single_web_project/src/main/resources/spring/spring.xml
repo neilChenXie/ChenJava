@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd">
+	<!--config file -->
+	<context:annotation-config />
+	<!--TODO:system.properties location -->
+	<context:property-placeholder location="classpath:system.properties"
+		ignore-unresolvable="true" />
+
+	<!--mybatis config file -->
+	<!--TODO:mybatis.properties location -->
+	<context:property-placeholder location="classpath:jdbc.properties"
+		ignore-unresolvable="true" />
+
+	<!--auto scan -->
+	<!--TODO:service implementation package -->
+	<!-- <context:component-scan base-package="com.service" /> transfer service 
+		class into bin -->
+
+	<!--import resource -->
+	<!--TODO:spring-mybatis.xml location -->
+	<!-- <import resource="classpath:configs/spring-mybatis.xml" /> -->
+</beans>
